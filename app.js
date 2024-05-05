@@ -4,7 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 require('dotenv').config();
-const port=process.env.PORT;
+const port=process.env.PORT || 3000;
 const indexRouter = require('./routes/index');
 
 const app = express();
