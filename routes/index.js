@@ -7,6 +7,7 @@ router.route('/').get((req,res)=>{
 })
 
 router.route('/home').get( (req, res)=> {
+
    res.render('client/index');
 })
 
@@ -23,6 +24,11 @@ router.route('/service').get( (req, res)=> {
 //serives page
 router.route('/contact').get( (req, res)=> {
   res.render('client/contact');
+})
+
+//courses page
+router.route('/course').get( (req, res)=> {
+  res.render('client/courses');
 })
 
 //serives page

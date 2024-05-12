@@ -1,6 +1,7 @@
 <%- include('../layouts/header.ejs') %>
 
-<body>
+<body style="position: relative;">
+    <%- include('../layouts/msg.ejs') %>
     <style>
         *::-webkit-scrollbar{
             width: 0px;
@@ -27,28 +28,60 @@
     <!-- ==========Header Section Starts Here========== -->
     <%- include('../layouts/nav.ejs') %>
     <!-- ==========Header Section Ends Here========== -->
+<style> .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }</style>
 
     <!-- ==========Banner Section Start Here========== -->
-    <section class="banner-section" style="background-image: url(https://oti.org.in/wp-content/uploads/2023/01/Course-1.jpg);">
+    <section class="banner-section position-relative " >
         <div class="container">
+            <div id="carouselExampleControls"  data-ride="carousel" class="carousel slide position-absolute w-100 h-100 " style="top:50%; left:50%;  transform: translate(-50%, -50%); z-index: -1;" >
+               <div style="width: 100%; height: 100%;" class="carousel-inner">
+                   <div  style="width: 100%; height: 100%;" class="carousel-item active"><img class="" style="object-fit: cover; width: 100%; height: 100%;" src="https://oti.org.in/wp-content/uploads/2023/01/Course-1.jpg" alt=""></div>
+                   <div  style="width: 100%; height: 100%;" class="carousel-item " style="background-color: #3C556D;"><img  style="object-fit: cover; width: 100%; height: 100%; opacity:.5;" src="/images/orginal/pexels-cottonbro-4101143.jpg" alt=""></div>
+               </div>
+             
+             
+            </div>
             <div class="banner-wrapper">
                 <div class="banner-content">
-                    <!-- <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">Best Medical
-                        Clinic
-                    </h2> -->
+                    
                     <h1 class="wow fadeInLeft " style="font-weight: bold; color:white" data-wow-duration="2s" data-wow-delay=".1s">WE ENSURE <br> A HAPPY LIVING</h1>
-                    <a href="#appointment" class="lab-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s"><span>Get
-                            Appoinments <i class="icofont-rounded-double-right"></i></span>
+                    <a  style=" float: left;   border-radius: 10px;" href="#appointment" class="lab-btn wow fadeInUp rounded-pill " data-wow-duration="1s" data-wow-delay=".1s"><span>Get
+                        Appointments <i class="icofont-rounded-double-right"></i></span>
                     </a>
+                    
+                    <a style=" margin-left: .4rem; border-radius: 10px;" href="#appointment" class="lab-btn wow fadeInUp    " data-wow-duration="1s" data-wow-delay=".1s"><span>Check Our Courses<i class="icofont-rounded-double-right"></i></span>
+                    </a>
+                    <div class="d-flex" style="gap: 1rem;">
+                       
+                   
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ==========Banner Section Ends Here========== -->
-
-
+ 
     <!-- ==========Department Section Start Here========== -->
+    
     <section class="department-section padding-tb style-1">
         <div class="container">
             <div class="department-wrapper">
@@ -62,13 +95,13 @@
                             <div class="">
                               
                             </div>
-                            <div class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div style="    border-radius: 15px;" class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane fade in active" id="one">
                                         <div class="row flex-row-reverse align-items-center">
                                             <div class="col-12 col-lg-6">
                                                 <div class="post-thumb">
-                                                    <img src="/images/depart/07.jpg" alt="depart">
+                                                    <img style="    border-radius: 15px;" src="/images/orginal/pexels-shvetsa-4672438.jpg" alt="depart">
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
@@ -84,7 +117,7 @@
                                                         <!-- <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li> -->
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a style="    border-radius: 10px;" href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -92,9 +125,9 @@
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade in" id="two">
                                         <div class="row flex-row-reverse align-items-center">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-thumb">
-                                                    <img src="/images/depart/08.jpg" alt="depart">
+                                            <div style="    border-radius: 15px;" class="col-12 col-lg-6">
+                                                <div style="    border-radius: 15px; " class="post-thumb">
+                                                    <img style="object-fit: cover;     border-radius: 15px;" src="/images/depart/08.jpg" alt="depart">
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
@@ -116,7 +149,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -148,7 +181,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -180,7 +213,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -212,7 +245,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -244,7 +277,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -276,7 +309,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -308,7 +341,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -340,7 +373,7 @@
                                                         <li>General Medical</li>
                                                         <li>Easy and Affordable Billing</li>
                                                     </ul>
-                                                    <a href="/contact" class="lab-btn"><span>Appointment Now <i
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
                                                                 class="icofont-rounded-double-right"></i></span></a>
                                                 </div>
                                             </div>
@@ -372,115 +405,367 @@
                         </div>
                         <div class="counter-content">
                             <h3 class="number"><span class="counter">500</span></h3>
-                            <p class="post-content">Patients Every Day</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-                    <div class="counter-item-inner">
-                        <div class="counter-thumb">
-                            <img src="/images/counter/02.png" alt="counter">
-                        </div>
-                        <div class="counter-content">
-                            <h3 class="number"><span class="counter">400</span></h3>
-                            <p class="post-content">Qualified Doctors</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="counter-item-inner">
-                        <div class="counter-thumb">
-                            <img src="/images/counter/03.png" alt="counter">
-                        </div>
-                        <div class="counter-content">
-                            <h3 class="number"><span class="counter">12</span></h3>
-                            <p class="post-content">Years Experience</p>
+                            <p class="post-content">Students</p>
                         </div>
                     </div>
                 </div>
                 <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                     <div class="counter-item-inner">
                         <div class="counter-thumb">
-                            <img src="/images/counter/04.png" alt="counter">
+                            <img src="/images/counter/02.png" alt="counter">
                         </div>
                         <div class="counter-content">
-                            <h3 class="number"><span class="counter">350</span></h3>
-                            <p class="post-content">Diagnosis Verity</p>
+                            <h3 class="number"><span class="counter">100</span></h3>
+                            <p class="post-content">Foreign Students</p>
                         </div>
                     </div>
                 </div>
+                <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="counter-item-inner">
+                        <div class="counter-thumb">
+                            <img src="/images/counter/03.png" alt="counter">
+                           
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="number"><span class="counter">20</span></h3>
+                            <p class="post-content">Faculties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="counter-item-inner">
+                        <div class="counter-thumb">
+                            <img src="/images/counter/04.png" alt="counter">
+                        
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="number"><span class="counter">10</span></h3>
+                            <p class="post-content">Placements</p>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </div>
     <!-- ==========Counter Section Ends Here========== -->
 
-
-    <!-- ==========Service Section Start Here========== -->
-    <section class="service-section style-1 padding-tb bg-color">
+    
+    <!-- ==========treament Section Start Here========== -->
+    <section class="department-section padding-tb style-1">
         <div class="container">
-            <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                <h2><span>We Are</span></h2>
-                <h2>Offering Reliable Services</h2>
-            </div>
-            <div class="section-wrapper">
-                <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/01.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="/contact">Family & Couple Counselling</a></h4>
-                            <p>Enhance strained connections with your partner or other family members. Our effective approach to family and couples therapy aids those experiencing challenges that impact their mental health and overall well-being.</p>
-                            <a href="/contact" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
+            <div class="department-wrapper">
+                <div class="section-header">
+                    <!-- <h2><span>We Are The </span></h2> -->
+                    <h2 style="text-transform: uppercase; width: 108%;">
+                        Treatment <b style="color: #3BAFBF;">Approach</b>  </h2>
                 </div>
-                <div class="service-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/02.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="/contact">MENTAL HEALTH COUNSELLING
-                            </a></h4>
-                            <p>We provide effective treatment without medicine for depression, anxiety, PTSD, ADHD, bipolar disorder, eating disorders, personality disorders, and just about any psychological issue you can think of.</p>
-                            <a href="/contact" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/03.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="/contact">ADOLESCENT COUNSELLING</a></h4>
-                            <p>The pre-teen and teenage years can be especially difficult for both child and parents. We provide professional assessment and counselling to address academic issues, guidance and help substance abuse and/or addiction.</p>
-                            <a href="/contact" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/04.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="/contact">Individual Counselling</a></h4>
-                            <p>Help your children to navigate, when they face a rough time in life. The Child and Adolescent counselling deals with children and adolescents, helping them to open up their difficulties or secrets in mind. The counsellor understands the root cause of the problem, and guide them to solve the issue completely.</p>
-                            <a href="/contact" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-12 col-xl-12">
+                            <div class="">
+                              
+                            </div>
+                            <div style="    border-radius: 15px;" class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="one">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img style="    border-radius: 15px;" src="https://mainlinepapsych.com/wp-content/uploads/2021/08/teen-psychiatry-services.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <!-- <h3>Create a meaningful impact in your life!</h3> -->
+                                                    <p>We at disha is a group of compassionate physicians and are committed to offer our patients the highest caliber of care – the same quality of care we would want for a family member or close friend. We are highly collaborative and works closely with patients and their families to help optimize treatment outcomes. We listens carefully to our patients and we use our expertise, knowledge, creativity, and intuition to develop treatment plans that work.</p>
+                                                   
+                                                    <a style="    border-radius: 10px;" href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="two">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div style="    border-radius: 15px;" class="col-12 col-lg-6">
+                                                <div style="    border-radius: 15px; " class="post-thumb">
+                                                    <img style="object-fit: cover;     border-radius: 15px;" src="/images/depart/08.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 2</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="three">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/09.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 3</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="four">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/10.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 4</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="five">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/4.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 5</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="six">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/5.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 6</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="seven">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/6.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 7</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="eight">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/07.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 8</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="nine">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img src="/images/depart/10.jpg" alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>Speciality Rhinology 9</h3>
+                                                    <p>Procedur arrain manu producs rather convenet cuvate mantna this
+                                                        man
+                                                        Manucur produc rather conven cuvatie mantan this conven cuvate
+                                                        bad
+                                                        Credibly envisioneer ubiquitous niche markets transparent
+                                                        relations
+                                                        Dramatically enable worldwide action items whereas magnetic
+                                                        source motin was procedur arramin</p>
+                                                    <ul>
+                                                        <li>Qualified Doctors</li>
+                                                        <li>Feel like Home Services</li>
+                                                        <li>24×7 Emergency Services</li>
+                                                        <li>Outdoor Checkup</li>
+                                                        <li>General Medical</li>
+                                                        <li>Easy and Affordable Billing</li>
+                                                    </ul>
+                                                    <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span>Appointment Now <i
+                                                                class="icofont-rounded-double-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ==========Service Section Ends Here========== -->
+    <!-- ==========treament Section Ends Here========== -->
 
+
+    <!-- ==========Service Section Start Here========== -->
+<%-  include('../layouts/services.ejs') %>
+    <!-- ==========Service Section Ends Here========== -->
+    <section class="newsletter-section style-1">
+        <div class="container">
+            <div class="section-wrapper d-flex align-items-center justify-content-between ">
+                <div class="news-title">
+                    <h2  style="color: white;"> Your smile warms our hearts.</h2>
+                </div>
+                <p style="padding: .5rem .7rem; border-radius: 10px; box-shadow: 2px 2px 1px 0 #00000036; text-transform: capitalize; background-color: white; color: #3BAFBF;">Join Now</p>
+            </div>
+        </div>
+    </section>
 
     <!-- ==========Doctor Section Start Here========== -->
     <section class="doctor-section style-1 padding-tb">
@@ -492,8 +777,8 @@
             <div class="section-wrapper">
                 <div class="row justify-content-center">
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <div class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                            <div class="doctor-inner">
+                        <div style="border-radius: 15px;" style="border-radius: 15px;" class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                            <div style="border-radius: 15px;" style="border-radius: 15px;" class="doctor-inner">
                                 <div class="doctor-thumb">
                                     <img src="/images/WhatsApp Image 2024-05-06 at 4.19.14 PM.jpeg" alt="doctor">
                                 </div>
@@ -513,10 +798,10 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <div class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                            <div class="doctor-inner">
+                        <div style="border-radius: 15px;" class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div style="border-radius: 15px;" class="doctor-inner">
                                 <div class="doctor-thumb">
-                                    <img src="/images/team/02.jpg" alt="doctor">
+                                    <img src="images/orginal/WhatsApp Image 2024-05-12 at 16.52.46_63e42cac.jpg" alt="doctor">
                                 </div>
                                 <div class="doctor-content">
                                     <div class="doctor-name">
@@ -532,10 +817,10 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <div class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                            <div class="doctor-inner">
+                        <div style="border-radius: 15px;" class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                            <div style="border-radius: 15px;" class="doctor-inner">
                                 <div class="doctor-thumb">
-                                    <img src="/images/team/03.jpg" alt="doctor">
+                                    <img src="images/orginal/WhatsApp Image 2024-05-12 at 16.52.53_4fdd841a.jpg" alt="doctor">
                                 </div>
                                 <div class="doctor-content">
                                     <div class="doctor-name">
@@ -551,10 +836,10 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <div class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                            <div class="doctor-inner">
+                        <div style="border-radius: 15px;" class="doctor-item style-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div style="border-radius: 15px;" class="doctor-inner">
                                 <div class="doctor-thumb">
-                                    <img src="/images/team/04.jpg" alt="doctor">
+                                    <img src="images/orginal/WhatsApp Image 2024-05-12 at 16.55.06_f85facac.jpg" alt="doctor">
                                 </div>
                                 <div class="doctor-content">
                                     <div class="doctor-name">
@@ -572,7 +857,7 @@
                 </div>
             </div>
             <div class="doctor-btn text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                <a href="/contact" class="lab-btn"><span> view all doctors <i
+                <a href="/contact" style="border-radius: 10px;" class="lab-btn"><span> view all doctors <i
                             class="icofont-rounded-double-right"></i></span></a>
             </div>
         </div>
@@ -648,7 +933,7 @@
                         </select>
                         <input type="text" id="lname" name="lastname" placeholder="Phone Number">
                         <input type="date" id="start" name="trip-start" value="2021-02-21">
-                        <button class="lab-btn" type="submit"><span>Appointment Now <i
+                        <button style="border-radius: 10px;" class="lab-btn" type="submit"><span>Appointment Now <i
                                     class="icofont-double-right"></i></span> </button>
                     </form>
                 </div>
@@ -658,116 +943,7 @@
     <!-- ==========Appointment Section Ends Here========== -->
 
 
-    <!-- ==========Blog Section Start Here========== -->
-    <section class="blog-section padding-tb bg-color">
-        <div class="container">
-            <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                <h2><span>News Feed</span></h2>
-                <h2>Be The First To New Stories</h2>
-            </div>
-            <div class="section-wrapper">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                        <div class="post-item-inner">
-                            <div class="post-thumb">
-                                <a href="/images/blog/1.jpg" data-rel="lightcase:myCollection"><img
-                                        src="/images/blog/1.jpg" alt="blog post images"></a>
-                            </div>
-                            <div class="post-content">
-                                <span class="meta">By <a href="/contact">Admin</a> March 24, 2021</span>
-                                <h4><a href="/contact">Globa Empoer Extenve Chanels Extensve Creat Method</a></h4>
-                                <p>Complete actuaze centi centrcing colora and sharin without anstaled anding bases
-                                    aweme medicalplus Template.</p>
-                            </div>
-                            <div class="blog-footer">
-                                <a href="/contact" class="viewall">Read More <i class="icofont-double-right"></i></a>
-                                <a href="/contact" class="blog-comment"><i class="icofont-comment"></i> 30</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="post-item-inner">
-                            <div class="post-thumb">
-                                <a href="/images/blog/2.jpg" data-rel="lightcase:myCollection"><img
-                                        src="/images/blog/2.jpg" alt="blog"></a>
-                            </div>
-                            <div class="post-content">
-                                <span class="meta">By <a href="/contact">Admin</a> March 24, 2021</span>
-                                <h4><a href="/contact">Globa Empoer Extenve Chanels Extensve Creat Method</a></h4>
-                                <p>Complete actuaze centi centrcing colora and sharin without anstaled anding bases
-                                    aweme medicalplus Template.</p>
-                            </div>
-                            <div class="blog-footer">
-                                <a href="/contact" class="viewall">Read More <i class="icofont-double-right"></i></a>
-                                <a href="/contact" class="blog-comment"><i class="icofont-comment"></i> 30</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                        <div class="post-item-inner">
-                            <div class="post-thumb">
-                                <a href="/images/blog/3.jpg" data-rel="lightcase:myCollection"><img
-                                        src="/images/blog/3.jpg" alt="blog"></a>
-                            </div>
-                            <div class="post-content">
-                                <span class="meta">By <a href="/contact">Admin</a> March 24, 2021</span>
-                                <h4><a href="/contact">Globa Empoer Extenve Chanels Extensve Creat Method</a></h4>
-                                <p>Complete actuaze centi centrcing colora and sharin without anstaled anding bases
-                                    aweme medicalplus Template.</p>
-                            </div>
-                            <div class="blog-footer">
-                                <a href="/contact" class="viewall">Read More <i class="icofont-double-right"></i></a>
-                                <a href="/contact" class="blog-comment"><i class="icofont-comment"></i> 30</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========Blog Section Ends Here========== -->
-
-
-    <!-- ==========Sponsor Section Start Here========== -->
-    <div class="sponsor-section">
-        <div class="container">
-            <div class="sponsor-area">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/1.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/2.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/3.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/4.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/5.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/6.png" alt="sponso-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ==========Sponsor Section Ends Here========== -->
+   
 <style>
     *{
         scroll-behavior: smooth;
@@ -801,7 +977,7 @@
     <!-- ==========Footer Section Ends Here========== -->
 
     <!-- scrollToTop start here -->
-    <a href="/contact" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+   
     <!-- scrollToTop ending here -->
 
 

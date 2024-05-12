@@ -1,6 +1,7 @@
 <%- include('../layouts/header.ejs') %>
 
-<body>
+<body style="position: relative;">
+    <%- include('../layouts/msg.ejs') %>
     <!-- preloader start here -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -32,7 +33,7 @@
             <div class="container">
                 <div class="page-header-content-inner">
                     <div class="page-title">
-                        <h2>Our Best Services</h2>
+                        <h2>Our Services</h2>
                     </div>
                     <ol class="breadcrumb">
                         <li><a href="/home">Home</a></li>
@@ -46,146 +47,124 @@
 
 
     <!-- ==========Service Section Start Here========== -->
-    <section class="service-section style-1 padding-tb">
+    <%-  include('../layouts/services.ejs') %>
+    <!-- ==========Service Section Ends Here========== -->
+
+    <section class="newsletter-section style-1">
         <div class="container">
-            <div class="section-wrapper">
-                <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/01.jpg" alt="service">
-                        </div>
-                        <div class="service-content bg-color">
-                            <h4><a href="#">Family Health Solutions</a></h4>
-                            <p>Proced arrain manu produc rather conve quvat mantan this conven multscplinari testin
-                                motin was procedur aamng proced arrain manu produc rather conve quvat mantan this
-                                convenmultscplinari testiners motin was procedur arramin</p>
-                            <a href="#" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
+            <div class="section-wrapper d-flex align-items-center justify-content-between ">
+                <div class="news-title">
+                    <h2  style="color: white;"> Your smile warms our hearts.</h2>
                 </div>
-                <div class="service-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/02.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="#">Eye Care Solutions</a></h4>
-                            <p>Cabor levera then andin the
-                                Qualit bwdh then covae thm
-                                Uabor evera then andin meqe
-                                Any value cordin</p>
-                            <a href="#" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/03.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="#">Children’s Health</a></h4>
-                            <p>Cabor levera then andin the
-                                Qualit bwdh then covae thm
-                                Uabor evera then andin meqe
-                                Any value cordin</p>
-                            <a href="#" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="/images/service/04.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
-                            <h4><a href="#">Dental Surgery</a></h4>
-                            <p>Proced arrain manu produc rather conve quvat mantan this conven multscplinari testin
-                                motin was procedur aamng proced arrain manu produc rather conve quvat mantan this
-                                convenmultscplinari testiners motin was procedur arraming</p>
-                            <a href="#" class="lab-btn"><span>Read More <i
-                                        class="icofont-rounded-double-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
+                <p style="padding: .5rem .7rem; border-radius: 10px; box-shadow: 2px 2px 1px 0 #00000036; text-transform: capitalize; background-color: white; color: #3BAFBF;">Join Now</p>
             </div>
         </div>
     </section>
-    <!-- ==========Service Section Ends Here========== -->
-
-
     <!-- ==========Service Section-2 Start Here========== -->
-    <section class="service-section style-1 style-3 padding-tb"
-        style="background-image: url(assets/images/service/bg.jpg); background-size: cover;">
+    <section class="feature-section padding-tb bg-color">
         <div class="container">
-            <div class="section-header">
-                <h2><span>We Are</span></h2>
-                <h2>Offering Reliable Services</h2>
-            </div>
-            <div class="section-wrapper">
-                <div class="row no-gutters">
-                    <div class="col-lg-6 col-12">
-                        <div class="service-item">
-                            <div class="service-thumb">
-                                <img src="/images/service/05.jpg" alt="service">
-                            </div>
-                            <div class="service-content">
-                                <div class="content-icon">
-                                    <img src="/images/service/icon/07.png" alt="">
+            <div class="feature-section-wrapper">
+                <div class="section-header wow fadeInUp" data-wow-delay="" data-wow-duration="1s">
+                    <h2 style="text-transform: capitalize;"><span> </span> </h2>
+                    <h2 style="text-transform: uppercase;">we also provide</h2>
+                </div>
+                <div class="section-content">
+                    <div style="gap: .9rem;" class="row justify-content-center">
+                        <div  class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div style="    border-radius: 15px;" class="lab-item feature-item wow fadeInLeft" data-wow-delay=".2s"
+                                data-wow-duration="1s">
+                                <div class="lab-inner d-flex flex-column  align-items-center ">
+                                    <div class="lab-thumb">
+                                        <img src="/images/feature/1.png" alt="feature img">
+                                    </div>
+                                    <div class="lab-content">
+                                        <h4>Family counselling</h4>
+                                      
+                                        <!-- <a href="#" class=""><span>Read More <i
+                                                    class="icofont-rounded-double-right"></i></span></a> -->
+                                    </div>
                                 </div>
-                                <h4>Laboratory Analysis</h4>
-                                <p>Cabor levera then andin thameo qualit bwdh then covae thm any value cordininger</p>
-                                <a href="#" class="text-btn">Read More <i class="icofont-double-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="service-item">
-                            <div class="service-thumb">
-                                <img src="/images/service/06.jpg" alt="service">
-                            </div>
-                            <div class="service-content">
-                                <div class="content-icon">
-                                    <img src="/images/service/icon/08.png" alt="">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div style="    border-radius: 15px;" class="lab-item feature-item wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1s">
+                                <div class="lab-inner d-flex flex-column  align-items-center ">
+                                    <div class="lab-thumb">
+                                        <img src="/images/feature/2.png" alt="feature img">
+                                    </div>
+                                    <div class="lab-content">
+                                        <h4>individual counselling</h4>
+                                       
+                                        <!-- <a href="#" class=""><span>Read More <i
+                                                    class="icofont-rounded-double-right"></i></span></a> -->
+                                    </div>
                                 </div>
-                                <h4>Gynaecological Clinic</h4>
-                                <p>Cabor levera then andin thameo qualit bwdh then covae thm any value cordininger</p>
-                                <a href="#" class="text-btn">Read More <i class="icofont-double-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="service-item">
-                            <div class="service-thumb">
-                                <img src="/images/service/07.jpg" alt="service">
-                            </div>
-                            <div class="service-content">
-                                <div class="content-icon">
-                                    <img src="/images/service/icon/09.png" alt="">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div style="    border-radius: 15px;" class="lab-item feature-item wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1s">
+                                <div class="lab-inner d-flex flex-column  align-items-center ">
+                                    <div class="lab-thumb">
+                                        <img src="/images/feature/3.png" alt="feature img">
+                                    </div>
+                                    <div class="lab-content">
+                                        <h4>students counselling</h4>
+                                      
+                                        <!-- <a href="#" class=""><span>Read More <i
+                                                    class="icofont-rounded-double-right"></i></span></a> -->
+                                    </div>
                                 </div>
-                                <h4>Ophthalmology Clinic</h4>
-                                <p>Cabor levera then andin thameo qualit bwdh then covae thm any value cordininger</p>
-                                <a href="#" class="text-btn">Read More <i class="icofont-double-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="service-item">
-                            <div class="service-thumb">
-                                <img src="/images/service/05.jpg" alt="service">
-                            </div>
-                            <div class="service-content">
-                                <div class="content-icon">
-                                    <img src="/images/service/icon/10.png" alt="">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div style="    border-radius: 15px;" class="lab-item feature-item wow fadeInRight" data-wow-delay=".2s"
+                                data-wow-duration="1s">
+                                <div class="lab-inner d-flex flex-column  align-items-center ">
+                                    <div class="lab-thumb">
+                                        <img src="/images/feature/4.png" alt="feature img">
+                                    </div>
+                                    <div class="lab-content">
+                                        <h4>Adolescent counselling</h4>
+                                        
+                                        <!-- <a href="#" class=""><span>Read More <i
+                                                    class="icofont-rounded-double-right"></i></span></a> -->
+                                    </div>
                                 </div>
-                                <h4>Laryngological Clinic</h4>
-                                <p>Cabor levera then andin thameo qualit bwdh then covae thm any value cordininger</p>
-                                <a href="#" class="text-btn">Read More <i class="icofont-double-right"></i></a>
                             </div>
                         </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div style="    border-radius: 15px;" class="lab-item feature-item wow fadeInRight" data-wow-delay=".2s"
+                                data-wow-duration="1s">
+                                <div class="lab-inner d-flex flex-column  align-items-center ">
+                                    <div class="lab-thumb">
+                                        <img src="/images/feature/4.png" alt="feature img">
+                                    </div>
+                                    <div class="lab-content">
+                                        <h4>Geriatric counselling</h4>
+                                        
+                                        <!-- <a href="#" class=""><span>Read More <i
+                                                    class="icofont-rounded-double-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div style="    border-radius: 15px;" class="lab-item feature-item wow fadeInRight" data-wow-delay=".2s"
+                                data-wow-duration="1s">
+                                <div class="lab-inner d-flex flex-column  align-items-center ">
+                                    <div class="lab-thumb">
+                                        <img src="/images/feature/4.png" alt="feature img">
+                                    </div>
+                                    <div class="lab-content">
+                                        <h4>Pre Marital counselling</h4>
+                                        
+                                        <!-- <a href="#" class=""><span>Read More <i
+                                                    class="icofont-rounded-double-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -195,44 +174,7 @@
 
 
     <!-- ==========Sponsor Section Start Here========== -->
-    <div class="sponsor-section">
-        <div class="container">
-            <div class="sponsor-area">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/1.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/2.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/3.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/4.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/5.png" alt="sponso-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sponsor-thumb">
-                            <img src="/images/sponsor/6.png" alt="sponso-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- ==========Sponsor Section Ends Here========== -->
 
     <!-- ==========Footer Section Ends Here========== -->
