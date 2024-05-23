@@ -1,6 +1,12 @@
 <%- include('../layouts/header.ejs') %>
 
     <body>
+<style>
+    *{
+        scroll-behavior: smooth;
+    }
+</style>
+
         <%- include('../layouts/msg.ejs') %>
             <!-- preloader start here -->
             <div class="preloader">
@@ -23,23 +29,36 @@
                 <%- include('../layouts/nav.ejs') %>
 
                     <!-- ==========Page Header Section Start Here========== -->
-                    <section class="page-header-section post-title style-1"
-                        style="background-image: url(/images/pageheader/pageheader.jpg)">
-                        <div class="page-header-content">
-                            <div class="container">
-                                <div class="page-header-content-inner">
-                                    <div class="page-title">
-                                        <h2>Our Courses</h2>
+                   
+                    <!-- ==========Page Header Section Ends Here========== -->
+
+
+                    <section class="banner-section position-relative " >
+                        <div class="container">
+                            <div id="carouselExampleControls"  data-ride="carousel" class="carousel slide position-absolute w-100 h-100 " style="top:50%; left:50%;  transform: translate(-50%, -50%); z-index: -1;background-color: #3971a5;" >
+                               <div style="width: 100%; height: 100%;" class="carousel-inner" style="background-color: #3971a5;">
+                                   <div  style="width: 100%; height: 100%;" class="carousel-item active" style="background-color: #3971a5;"><img class="" style="object-fit: cover; width: 100%; height: 100%; opacity:.5;" src="/images/WhatsApp Image 2024-05-23 at 8.58.25 PM.jpeg" alt=""></div>
+                                   <div  style="width: 100%; height: 100%;" class="carousel-item " style="background-color: #3971a5;"><img  style="object-fit: cover; width: 100%; height: 100%; opacity:.5;" src="/images/WhatsApp Image 2024-05-23 at 9.39.47 PM.jpeg" alt=""></div>
+                               </div>
+
+                             
+                            </div>
+                            <div class="banner-wrapper">
+                                <div class="banner-content">
+                                    
+                                    <h1 class="wow fadeInLeft " style="font-weight: bold; color:white" data-wow-duration="2s" data-wow-delay=".1s"> <br> OUR HAPPY STUDENTS</h1>
+                                    <a  style=" float: left;   border-radius: 10px;" href="#in" class="lab-btn wow fadeInUp rounded-pill " data-wow-duration="1s" data-wow-delay=".1s"><span>EXPLORE OUR COURSES <i class="icofont-rounded-double-right"></i></span>
+                                    </a>
+                                    
+                                   
+                                    <div class="d-flex" style="gap: 1rem;">
+                                       
+                                   
                                     </div>
-                                    <ol class="breadcrumb">
-                                        <li><a href="/home">Home</a></li>
-                                        <li class="active">Course</li>
-                                    </ol>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- ==========Page Header Section Ends Here========== -->
 
                     <section class="department-section padding-tb style-1">
                         <div class="container">
@@ -63,7 +82,7 @@
                                                             <div class="col-12 col-lg-6">
                                                                 <div class="post-thumb">
                                                                     <img style="    border-radius: 15px;"
-                                                                        src="/images/orginal/photo_2024-05-09_15-47-20.jpg"
+                                                                        src="/images/orginal/WhatsApp Image 2024-05-23 at 8.58.22 PM.jpeg"
                                                                         alt="depart">
                                                                 </div>
                                                             </div>
@@ -100,6 +119,8 @@
                             </div>
                         </div>
                     </section>
+
+                    
                     <!-- ==========Counter Section Start Here========== -->
                     <div class="counter-section style-1 padding-60">
                         <div class="container">
@@ -155,12 +176,12 @@
                         </div>
                     </div>
                     <!-- ==========Counter Section Ends Here========== -->
-                    <section class="feature-section padding-tb bg-color">
+                    <section id="in" class="feature-section padding-tb bg-color">
                         <div class="container">
                             <div class="feature-section-wrapper">
                                 <div class="section-header wow fadeInUp" data-wow-delay="" data-wow-duration="1s">
                                     <h2 style="text-transform: capitalize;"><span> </span> </h2>
-                                    <h2 style="text-transform: uppercase;">Browse Our Courses</h2>
+                                    <h2 style="text-transform: uppercase;"> Our Courses</h2>
                                 </div>
                                 <div class="section-content">
                                     <div style="gap: 0rem;" class="row justify-content-center">
@@ -174,7 +195,7 @@
                                                       <!-- <br> -->
                                                       <p>Mode: Online/Offline</p>
                                                       
-                                                        <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://api.whatsapp.com/send/?phone=917510404010&text=help me enroll this course&type=phone_number&app_absent=0" class=""><span>Start Learning <i
+                                                        <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://forms.gle/QMzTHuN5EpcwkXRu7" class=""><span>Start Learning <i
                                                                     class="icofont-rounded-double-right"></i></span></a>
                                                     </div>
                                                 </div>
@@ -189,7 +210,7 @@
                                                       <!-- <br> -->
                                                       <p>Mode: Online/Offline</p>
                                                        
-                                                          <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://api.whatsapp.com/send/?phone=917510404010&text=help me enroll this course&type=phone_number&app_absent=0" class=""><span>Start Learning <i
+                                                          <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://forms.gle/QMzTHuN5EpcwkXRu7" class=""><span>Start Learning <i
                                                                     class="icofont-rounded-double-right"></i></span></a>
                                                     </div>
                                                 </div>
@@ -204,7 +225,7 @@
                                                             <!-- <br> -->
                                                             <p>Mode: Online/Offline</p>
                                                       
-                                                          <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://api.whatsapp.com/send/?phone=917510404010&text=help me enroll this course&type=phone_number&app_absent=0" class=""><span>Start Learning <i
+                                                          <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://forms.gle/QMzTHuN5EpcwkXRu7" class=""><span>Start Learning <i
                                                                     class="icofont-rounded-double-right"></i></span></a>
                                                     </div>
                                                 </div>
@@ -220,7 +241,7 @@
                                                             <!-- <br> -->
                                                             <p>Mode: Online/Offline</p>
                                                         
-                                                          <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://api.whatsapp.com/send/?phone=917510404010&text=help me enroll this course&type=phone_number&app_absent=0" class=""><span>Start Learning <i
+                                                          <a style="display: flex; align-items: center; justify-content: center; padding: .5rem .7rem; background-color: #3BAFBF; color: white; border-radius: 10px;" href="https://forms.gle/QMzTHuN5EpcwkXRu7" class=""><span>Start Learning <i
                                                                     class="icofont-rounded-double-right"></i></span></a>
                                                     </div>
                                                 </div>
@@ -234,36 +255,30 @@
                             </div>
                         </div>
                     </section>
-
-                    <section class="certificat-section padding-tb">
-                        <div class="container">
-                            <div style="align-items: center; " class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="certificate-content">
-                                        <h2 style="opacity: 0;">ssss </h2>
-                                        <h2 >Our Certifications</h2>
-                                        <p>Our courses are approved and certified by Indira Gandhi National Education Trust (IGNET). This is globally approved and this certificate helps you in landing a government jobs.                                        </p>
-                                        <a style="border-radius: 10px;" href="https://ignetonline.org/index" class="lab-btn"><span>Visit Our Website <i
-                                                    class="icofont-double-right"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="certificats-site">
-                                        <div class="row no-gutters">
-                                            <div class="col-12 col-sm-6 col-md-6">
-                                                <div class="certificate-item-inner">
-                                                    <div class="certificate-thumb">
-                                                        <img src="https://ignetonline.org/assets/img/logo.png" alt="certificat">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <section style="background-color: #F5F9FF; transform: translateY(-.5rem);" class="d-flex w-100 pb-5   align-items-center justify-content-center ">
+                        <a id="kk" style="display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1.2rem 6rem;
+                        background-color: #3BAFBF;
+                        color: white;
+                        border-radius: 10px;
+                        font-size: 1.5rem;" href="https://forms.gle/QMzTHuN5EpcwkXRu7" class=""><span>Apply Now!!</span></a>
+                        <style>
+                            #kk{
+                                transition: all ease 0.3s;
+                            }
+                            #kk:hover{
+                                opacity: .8;
+                            }
+                            #kk:active{
+                               scale: .8;
+                            }
+                        </style>
                     </section>
+
+                    <%- include('../layouts/certifcate.ejs') %>
+
                     <!-- ==========Feature Section Start Here========== -->
                     <%- include('../layouts/featured.ejs') %>
                         <!-- ==========Feature Section Ends Here========== -->
