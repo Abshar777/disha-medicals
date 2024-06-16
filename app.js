@@ -1,7 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const serverles=require("s")
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 require('dotenv').config();
