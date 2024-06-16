@@ -1,5 +1,4 @@
 const createError = require('http-errors');
-const serverless = require('serverless-http');
 const express = require('express');
 const path = require('path');
 const serverles=require("s")
@@ -24,4 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 
-module.exports.handler = serverless(app);
+app.listen(port,()=>{
+    console.log(`server running on ${port}`)
+  })
